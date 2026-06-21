@@ -1,0 +1,11 @@
+services:
+django:
+image: amannvp/amannvp:latest
+container_name: django-app
+ports:
+- "8000:8000"
+volumes:
+- django-data:/app/data
+
+volumes:
+django-data:
